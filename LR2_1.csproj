@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="companies.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="companies.json" />
+    <None Include="wwwroot\images\1685334855_4.jpg" />
+    <None Include="wwwroot\images\1685334911_6.jpg" />
+  </ItemGroup>
+
+</Project>

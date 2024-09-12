@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "LR2";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@model HomeViewModel
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin: 50px 0;">
+    <!-- Ліва частина з текстом -->
+    <div style="flex: 1; margin-right: 20px;">
+        <h2>Найбільша компанія</h2>
+        <p>Компанія з найбільшою кількістю співробітників: <strong>@Model.LargestCompany</strong></p>
+
+        <h2>Особиста інформація</h2>
+        <p>Ім'я: <strong>@Model.Name</strong></p>
+        <p>Вік: <strong>@Model.Age</strong></p>
+        <p>Університет: <strong>@Model.University</strong></p>
+        <p>Спеціальність: <strong>@Model.Specialty</strong></p>
+    </div>
+
+    <!-- Права частина з зображенням -->
+    <div style="flex: 0;">
+        <img src="~/images/1685334855_4.jpg" alt="Фото" style="max-width: 500px; height: auto;">
+    </div>
+</div>
